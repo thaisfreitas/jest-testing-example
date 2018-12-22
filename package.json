@@ -1,0 +1,29 @@
+{
+  "name": "jest-testing-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "jest": "^23.6.0"
+  },
+  "scripts": {
+    "test": "jest --coverage",
+    "test:watch": "jest --watchAll"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "*.js"
+    ],
+    "coverageThreshold":{
+      "global":{
+        "statements": 25,
+        "branches": 100,
+        "functions": 50,
+        "lines": 25
+      }
+    }
+  }
+}
